@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="UTF-8">
+    <title>DOEKsocial Events</title>
+</head>
+<body>
+
+
+
+<div class = "container">
+    <div class = "row" id = "nav-container"></div>
+    <div class = "table" id = "event-list"></div>
+</div>
+
+
+<div id = "attendingStudents-modal" class = "modal" role = "dialog">
+    <div class = "modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <h5 class = "modal-title">Participant list</h5>
+                <div id="attendingListContent"></div>
+            </div>
+            <div class = "modal-footer">
+                <button type = "button" class = "btn btn-warning" id = "closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">2017 © All rights reserved - Frederiks Examsproject</p>
+    </div>
+</footer>
+
+<script src="lib/js/jquery-3.2.1.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="js/sdk.js"></script>
+<script src="js/events.js"></script>
+<script>
+    SDK.loadNav();
+</script>
+
+
+</body>
+</html>
